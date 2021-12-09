@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./Assets/Font/fontawesome/fontawesome-free-5.15.4-web/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./Assets/Font/themify-icons-font/themify-icons/themify-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./Assets/Img/Logo/LogoPrimary.webp"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="./Assets/Css/reset.css" />
+    <link rel="stylesheet" href="./Assets/Css/base.css" />
+    <link rel="stylesheet" href="./Assets/Css/grid.css" />
+    <link rel="stylesheet" href="./Assets/Css/style.css" />
+    <link rel="stylesheet" href="./Assets/Css/responsive.css" />
+    <title>Grick Lo</title>
+  </head>
+  <body>
+    <div id="app">
+      <div
+        class="slider__background hero-overly"
+        style="background-image: url(./Assets/Img/Background/bg.png)"
+      >
+        <div class="header" id="header">
+          <div class="header__logo">
+            <img src="./Assets/Img/Logo/Logo.png" alt="" />
+          </div>
+          <div class="header__search">
+            <div class="header__search--input">
+              <input type="text" class="input" placeholder="Search" />
+            </div>
+            <div class="header__search--icon">
+              <i class="fas fa-search search__icon"></i>
+            </div>
+          </div>
+          <div class="header__navbar">
+            <ul class="header__navbar-list">
+              <li class="header__navbar-item">
+                <a href="" class="header__navbar-link">Home</a>
+              </li>
+              <li class="header__navbar-item header__navbar-item-dropdown">
+                <a href="" class="header__navbar-link"
+                  >Listing
+                  <i class="ti-angle-down header__navbar-link-icon"></i>
+                  <div class="dropdown">
+                    <ul class="dropdown-list">
+                      <li class="dropdown-item">
+                        <a href="" class="dropdown-link">Listing</a>
+                      </li>
+                      <li class="dropdown-item">
+                        <a href="" class="dropdown-link">Listing Details</a>
+                      </li>
+                    </ul>
+                  </div>
+                </a>
+              </li>
+              <li class="header__navbar-item">
+                <a href="" class="header__navbar-link">About</a>
+              </li>
+              <li class="header__navbar-item header__navbar-item-dropdown">
+                <a href="" class="header__navbar-link"
+                  >Blog
+                  <div class="dropdown">
+                    <ul class="dropdown-list">
+                      <li class="dropdown-item">
+                        <a href="" class="dropdown-link">Blog</a>
+                      </li>
+                      <li class="dropdown-item">
+                        <a href="" class="dropdown-link">Blog Details</a>
+                      </li>
+                      <li class="dropdown-item">
+                        <a href="" class="dropdown-link">Element</a>
+                      </li>
+                    </ul>
+                  </div>
+                </a>
+              </li>
+              <li class="header__navbar-item">
+                <a href="" class="header__navbar-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="header__sign">
+            <div class="header__sign-in">Sign In</div>
+            <a href="" class="btn header__sign-btn">Add Listing</a>
+          </div>
+          <div class="header__menu">
+            <a><i class="fas fa-bars header__menu-icon" id="header__menu"></i></a>
+            <div class="header__menu-block">
+              <ul class="header__menu-list">
+                <li class="header__menu-item">
+                  <a href="" class="header__menu-link">Home</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="" class="header__menu-link">Listing</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="" class="header__menu-link">About</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="" class="header__menu-link">Blog</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="" class="header__menu-link">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="search">
+          <div class="grid wide">
+            <div class="row"> 
+              <div class="col l-9 center m-12 c-12">
+                <div class="search__content">
+                  <h1 class="search__content-heading">Listing made easy.</h1>
+                  <p class="search__content-subheading">
+                    Explore vacation rentals, bar & restaurants and experiences
+                    . Find amazing places to visit
+                  </p>
+                </div>
+                <form action="" class="search__content-form">
+                  <div class="form-input">
+                    <input
+                      type="text"
+                      class="search__content-form-input"
+                      placeholder="Ex: Food , Hotel..."
+                    />
+                    <span class="search__content-form-info">What?</span>
+                  </div>
+                  <div class="form-input">
+                    <input
+                      type="text"
+                      class="search__content-form-input"
+                      placeholder="Your City..."
+                    />
+                    <span class="search__content-form-info">Where?</span>
+                  </div>
+                  <a class="btn search__content-form-btn">
+                    <i class="fas fa-search search__icon"></i>
+                    <span style="padding: 0 8px">Search</span>
+                  </a>
+                </form>
+                <div class="search__category">
+                  <ul class="search__category-list">
+                    <li class="search__category-item">
+                      <a href="" class="btn__category">Restaurant</a>
+                    </li>
+                    <li class="search__category-item">
+                      <a href="" class="btn__category btn__active">Home</a>
+                    </li>
+                    <li class="search__category-item">
+                      <a href="" class="btn__category">Party</a>
+                    </li>
+                    <li class="search__category-item">
+                      <a href="" class="btn__category">Shopping</a>
+                    </li>
+                    <li class="search__category-item">
+                      <a href="" class="btn__category">Hotel</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End slider 1 -->
+      <div class="destination">
+        <div class="grid wide">
+          <div class="row">
+            <div class="col l-12 m-12 c-12">
+              <div class="destination__content">
+                <h1 class="destination__content-heading">Top Destination</h1>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col l-2 m-4 c-6">
+              <div class="destination__content-img">
+                <img src="./Assets/Img/Content/img1.png" alt="" />
+                <h3 class="destination__content-info">New York</h3>
+              </div>
+            </div>
+            <div class="col l-2 m-4 c-6">
+              <div class="destination__content-img">
+                <img src="./Assets/Img/Content/img2.png" alt="" />
+                <h3 class="destination__content-info">Toronto</h3>
+              </div>
+            </div>
+            <div class="col l-2 m-4 c-6">
+              <div class="destination__content-img">
+                <img src="./Assets/Img/Content/img3.png" alt="" />
+                <h3 class="destination__content-info">Thailand</h3>
+              </div>
+            </div>
+            <div class="col l-2 m-4 c-6">
+              <div class="destination__content-img">
+                <img src="./Assets/Img/Content/img4.png" alt="" />
+                <h3 class="destination__content-info">Paris</h3>
+              </div>
+            </div>
+            <div class="col l-2 m-4 c-6">
+              <div class="destination__content-img">
+                <img src="./Assets/Img/Content/img5.png" alt="" />
+                <h3 class="destination__content-info">Dhaka</h3>
+              </div>
+            </div>
+            <div class="col l-2 m-4 c-6">
+              <div class="destination__content-img">
+                <img src="./Assets/Img/Content/img6.png" alt="" />
+                <h3 class="destination__content-info">Rome</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End slider 2 -->
+      <div class="popular">
+        <div class="grid wide">
+          <div class="row">
+            <div class="col l-12 m-12 c-12">
+              <div class="popular__content">
+                <h3 class="popular__content-heading">
+                  Things Are You Interested In
+                </h3>
+                <p class="popular__content-subheading">
+                  Things you are looking for today
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row pd90">
+            <div class="col l-4 m-12 c-12">
+              <div class="popular__block">
+                <div class="row">
+                  <div class="col l-12 m-6 c-12">
+                    <div class="popular__block-content">
+                      <img
+                        src="./Assets/Img/Content/img7.png"
+                        alt=""
+                        class="popular__block-img"
+                      />
+                      <h2 class="popular__block-content-heading">
+                        Restaurant & Bar
+                      </h2>
+                    </div>
+                  </div>
+                  <div class="col l-12 m-6 c-12">
+                    <div class="popular__block-content">
+                      <img
+                        src="./Assets/Img/Content/img8.png"
+                        alt=""
+                        class="popular__block-img"
+                      />
+                      <h2 class="popular__block-content-heading">Out door</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col l-4 m-12 c-12">
+              <div class="popular__block">
+                <div class="row">
+                  <div class="col l-12 m-12 c-12">
+                    <div class="popular__block-content">
+                      <img
+                        src="./Assets/Img/Content/img9.png"
+                        alt=""
+                        class="popular__block-img"
+                      />
+                      <div class="popular__block-content-heading">
+                        <h2>Shopping Center</h2>
+                        <p>
+                          Discover & connect with great local businesses in New
+                          York
+                        </p>
+                        <a href="" class="btn btn__popular">Explore</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col l-4 m-12 c-12">
+              <div class="popular__block">
+                <div class="row">
+                  <div class="col l-12 m-6">
+                    <div class="popular__block-content">
+                      <img
+                        src="./Assets/Img/Content/img10.png"
+                        alt=""
+                        class="popular__block-img"
+                      />
+                      <h2 class="popular__block-content-heading">
+                        Restaurant & Bar
+                      </h2>
+                    </div>
+                  </div>
+                  <div class="col l-12 m-6 c-12">
+                    <div class="popular__block-content">
+                      <img
+                        src="./Assets/Img/Content/img11.png"
+                        alt=""
+                        class="popular__block-img"
+                      />
+                      <h2 class="popular__block-content-heading">Out door</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Slider 3 -->
+      <div class="review">
+        <div class="grid wide">
+          <div class="row">
+            <div class="col l-12 m-12 c-12">
+              <div class="popular__content" style="margin-bottom: 40px">
+                <h3 class="popular__content-heading">Popular Things To do</h3>
+                <p class="popular__content-subheading">
+                  Popular Exclusive Listings In Our Directory
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row slick">
+            <div class="col l-4 c-12 m-4">
+              <div class="review__content">
+                <div class="review__content-item">
+                  <img
+                    src="./Assets/Img/Content/img12.png"
+                    alt=""
+                    class="review__content-item-img"
+                  />
+                  <div class="review__content-vote--btn">
+                    <a href="" class="review__content-vote-link">Closed</a>
+                    <i class="ti-heart"></i>
+                  </div>
+                  <div class="review__content-vote-icon">
+                    <i class="fas fa-star vote-icon"></i>
+                    <i class="fas fa-star vote-icon"></i>
+                    <i class="fas fa-star vote-icon"></i>
+                    <i class="fas fa-star vote-icon"></i>
+                    <i class="fas fa-star vote-icon"></i>
+                    <span> -4.9 (999 Review)</span>
+                  </div>
+                </div>
+                <div class="review__content-body">
+                  <h3 class="review__content-body-heading">
+                    Gloria Fast Foot Restaurant
+                    <img
+                      src="data:image/webp;base64,UklGRsIAAABXRUJQVlA4TLYAAAAvDoADEJ+goG0jJ8ef7l7/NBRFkhoN/qVhAAwg4EjySq3ZSDJW/81pQE4uBlEjqRkc4P+HE6QgoVVwAXx91FPXQNyuiNLVrldk+fjCB7mPEhx4EME0/4Zn4SCSJEXqo/2v5Z3xr3ZBQ0T/J0CSrGdyNy19sB4uyRP75FLldMjYhz9Y24Xrg1aAAITrATLwu17C9TAXIFz39TCXBhCuh2WziR9rU522VfJ4EF2S1011La0VSjNJAg=="
+                      alt=""
+                    />
+                  </h3>
+                  <p class="review__content-body-subheading">
+                    <i class="fas fa-map-marker-alt"></i>
+                    75 Prince Street, green road, NY, USAK
+                  </p>
+                </div>
+                <div class="review__content-footer">
+                  <div class="review__content-footer-img">
+                    <img
+                      src="https://preview.colorlib.com/theme/gricklo/assets/img/icon/restaurant-icon.svg"
+                      alt=""
+                    />
+                  </div>
+                  <span>Food & Restaurant</span>
+                  <div class="review__content-footer-icon">
+                    <i class="fas fa-phone review__footer-icon"></i>
+                    <i class="far fa-envelope review__footer-icon"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col l-4 c-12 m-4">
+              <div class="review__content">
+                <div class="review__content-item">
+                  <img
+                    src="./Assets/Img/Content/img13.png"
+                    alt=""
+                    class="review__content-item-img"
+                  />
+                  <div class="review__content-vote--btn">
+                    <a href="" class="review__content-vote-link">Closed</a>
+                    <i class="ti-heart"></i>
+                  </div>
+                  <div class="review__content-vote-icon">
+                    <i class="fas fa-star vote-icon"></i>
+                    <i class="fas fa-star vote-icon"></i>
+                    <i class="fas fa-star vote-icon"></i>
+                    <i class="fas fa-star vote-icon"></i>
+                    <i class="fas fa-star vote-icon"></i>
+                    <span> -4.9 (999 Review)</span>
+                  </div>
+                </div>
+                <div class="review__content-body">
+                  <h3 class="review__content-body-heading">
+                    Gloria Fast Foot Restaurant
+                    <img
+                      src="data:image/webp;base64,UklGRsIAAABXRUJQVlA4TLYAAAAvDoADEJ+goG0jJ8ef7l7/NBRFkhoN/qVhAAwg4EjySq3ZSDJW/81pQE4uBlEjqRkc4P+HE6QgoVVwAXx91FPXQNyuiNLVrldk+fjCB7mPEhx4EME0/4Zn4SCSJEXqo/2v5Z3xr3ZBQ0T/J0CSrGdyNy19sB4uyRP75FLldMjYhz9Y24Xrg1aAAITrATLwu17C9TAXIFz39TCXBhCuh2WziR9rU522VfJ4EF2S1011La0VSjNJAg=="
+                      alt=""
+                    />
+                  </h3>
+                  <p class="review__content-body-subheading">
+                    <i class="fas fa-map-marker-alt"></i>
+                    75 Prince Street, green road, NY, USAK
+                  </p>
+                </div>
+                <div class="review__content-footer">
+                  <div class="review__content-footer-img">
+                    <img
+                      src="https://preview.colorlib.com/theme/gricklo/assets/img/icon/restaurant-icon.svg"
+                      alt=""
+                    />
+                  </div>
+                  <span>Food & Restaurant</span>
+                  <div class="review__content-footer-icon">
+                    <i class="fas fa-phone review__footer-icon"></i>
+                    <i class="far fa-envelope review__footer-icon"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col l-4 c-12 m-4">
+              <div class="review__content">
+                <div class="review__content-item">
+                  <img
+                    src="./Assets/Img/Content/img14.png"
+                    alt=""
+                    class="review__content-item-img"
+                  />
+                  <div class="review__content-vote--btn">
+                    <a href="" class="review__content-vote-link">Closed</a>
+                    <i class="ti-heart"></i>
+                  </div>
+                  <div class="review__content-vote-icon">
+                    <i class="fas fa-star vote-icon"></i>
+                    <i class="fas fa-star vote-icon"></i>
+                    <i class="fas fa-star vote-icon"></i>
+                    <i class="fas fa-star vote-icon"></i>
+                    <i class="fas fa-star vote-icon"></i>
+                    <span> -4.9 (999 Review)</span>
+                  </div>
+                </div>
+                <div class="review__content-body">
+                  <h3 class="review__content-body-heading">
+                    Gloria Fast Foot Restaurant
+                    <img
+                      src="data:image/webp;base64,UklGRsIAAABXRUJQVlA4TLYAAAAvDoADEJ+goG0jJ8ef7l7/NBRFkhoN/qVhAAwg4EjySq3ZSDJW/81pQE4uBlEjqRkc4P+HE6QgoVVwAXx91FPXQNyuiNLVrldk+fjCB7mPEhx4EME0/4Zn4SCSJEXqo/2v5Z3xr3ZBQ0T/J0CSrGdyNy19sB4uyRP75FLldMjYhz9Y24Xrg1aAAITrATLwu17C9TAXIFz39TCXBhCuh2WziR9rU522VfJ4EF2S1011La0VSjNJAg=="
+                      alt=""
+                    />
+                  </h3>
+                  <p class="review__content-body-subheading">
+                    <i class="fas fa-map-marker-alt"></i>
+                    75 Prince Street, green road, NY, USAK
+                  </p>
+                </div>
+                <div class="review__content-footer">
+                  <div class="review__content-footer-img">
+                    <img
+                      src="https://preview.colorlib.com/theme/gricklo/assets/img/icon/restaurant-icon.svg"
+                      alt=""
+                    />
+                  </div>
+                  <span>Food & Restaurant</span>
+                  <div class="review__content-footer-icon">
+                    <i class="fas fa-phone review__footer-icon"></i>
+                    <i class="far fa-envelope review__footer-icon"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col l-4 c-12 m-4">
+              <div class="review__content">
+                <div class="review__content-item">
+                  <img
+                    src="./Assets/Img/Content/img15.png"
+                    alt=""
+                    class="review__content-item-img"
+                  />
+                  <div class="review__content-vote--btn">
+                    <a href="" class="review__content-vote-link">Closed</a>
+                    <i class="ti-heart"></i>
+                  </div>
+                  <div class="review__content-vote-icon">
+                    <i class="fas fa-star vote-icon"></i>
+                    <i class="fas fa-star vote-icon"></i>
+                    <i class="fas fa-star vote-icon"></i>
+                    <i class="fas fa-star vote-icon"></i>
+                    <i class="fas fa-star vote-icon"></i>
+                    <span> -4.9 (999 Review)</span>
+                  </div>
+                </div>
+                <div class="review__content-body">
+                  <h3 class="review__content-body-heading">
+                    Gloria Fast Foot Restaurant
+                    <img
+                      src="data:image/webp;base64,UklGRsIAAABXRUJQVlA4TLYAAAAvDoADEJ+goG0jJ8ef7l7/NBRFkhoN/qVhAAwg4EjySq3ZSDJW/81pQE4uBlEjqRkc4P+HE6QgoVVwAXx91FPXQNyuiNLVrldk+fjCB7mPEhx4EME0/4Zn4SCSJEXqo/2v5Z3xr3ZBQ0T/J0CSrGdyNy19sB4uyRP75FLldMjYhz9Y24Xrg1aAAITrATLwu17C9TAXIFz39TCXBhCuh2WziR9rU522VfJ4EF2S1011La0VSjNJAg=="
+                      alt=""
+                    />
+                  </h3>
+                  <p class="review__content-body-subheading">
+                    <i class="fas fa-map-marker-alt"></i>
+                    75 Prince Street, green road, NY, USAK
+                  </p>
+                </div>
+                <div class="review__content-footer">
+                  <div class="review__content-footer-img">
+                    <img
+                      src="https://preview.colorlib.com/theme/gricklo/assets/img/icon/restaurant-icon.svg"
+                      alt=""
+                    />
+                  </div>
+                  <span>Food & Restaurant</span>
+                  <div class="review__content-footer-icon">
+                    <i class="fas fa-phone review__footer-icon"></i>
+                    <i class="far fa-envelope review__footer-icon"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col l-8 l-o-2 m-12 c-12">
+              <div class="review__footer">
+                <div class="review__footer-info">
+                  <h3 class="review__footer-heading">
+                    Do you want to find more?
+                  </h3>
+                  <p class="review__footer-subheading">
+                    10,563 listing for you on our list.
+                  </p>
+                </div>
+                <div class="review__button">
+                  <a href="" class="btn">Explore more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Slider 4 -->
+      <div class="work">
+        <div class="grid wide">
+          <div class="row">
+            <div class="col l-8 l-o-2 c-12">
+              <div class="work__content-head">
+                <h3 class="work__content-heading">How It Work?</h3>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col l-4 c-12">
+              <div class="work__content-body">
+                <div class="work__content-body-icon">
+                  <img
+                    src="https://preview.colorlib.com/theme/gricklo/assets/img/icon/services1.svg"
+                    alt=""
+                  />
+                </div>
+                <h3 class="work__content-body-heading">Find Businesses</h3>
+                <p class="work__content-body-info">
+                  Discover & connect with great local businesses in your local
+                  neighborhood like dentists, hair stylists and more
+                </p>
+              </div>
+            </div>
+            <div class="col l-4 c-12">
+              <div class="work__content-body">
+                <div class="work__content-body-icon">
+                  <img
+                    src="https://preview.colorlib.com/theme/gricklo/assets/img/icon/services2.svg"
+                    alt=""
+                  />
+                </div>
+                <h3 class="work__content-body-heading">Review Listings</h3>
+                <p class="work__content-body-info">
+                  Discover & connect with great local businesses in your local
+                  neighborhood like dentists, hair stylists and more
+                </p>
+              </div>
+            </div>
+            <div class="col l-4 c-12">
+              <div class="work__content-body">
+                <div class="work__content-body-icon">
+                  <img
+                    src="https://preview.colorlib.com/theme/gricklo/assets/img/icon/services3.svg"
+                    alt=""
+                  />
+                </div>
+                <h3 class="work__content-body-heading">Make a Reservation</h3>
+                <p class="work__content-body-info">
+                  Discover & connect with great local businesses in your local
+                  neighborhood like dentists, hair stylists and more
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Slider 5 -->
+      <div class="video">
+        <div class="grid wide">
+          <div class="row">
+            <div class="col l-6 c-12">
+              <div class="video__image">
+                <img src="./Assets/Img/Content/video.png" alt="" />
+                <div class="video__image-icon">
+                  <img
+                    src="https://preview.colorlib.com/theme/gricklo/assets/img/icon/play-butto.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col l-6 video__slick c-12">
+              <div class="video__content">
+                <div class="video__content-head">
+                  <h3 class="video__content-heading">People talking about</h3>
+                </div>
+                <div class="video__content-body">
+                  <p class="video__content-body-info">
+                    "Discover & connect with great local businesses in your
+                    local neighborhood like dentists, hair stylists and more
+                    unde omnis iste natus error sit voluptatem.
+                  </p>
+                </div>
+                <div class="video__content-people">
+                  <div class="video__content-people-img">
+                    <img src="./Assets/Img/Content/people.png" alt="" />
+                  </div>
+                  <div class="video__content-people-info">
+                    <span class="video__content-people-name">Hữu Hoài</span>
+                    <p class="video__content-people-add">
+                      UI & UX Design In Đông Ngàn
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="video__content">
+                <div class="video__content-head">
+                  <h3 class="video__content-heading">People talking about</h3>
+                </div>
+                <div class="video__content-body">
+                  <p class="video__content-body-info">
+                    "Discover & connect with great local businesses in your
+                    local neighborhood like dentists, hair stylists and more
+                    unde omnis iste natus error sit voluptatem.
+                  </p>
+                </div>
+                <div class="video__content-people">
+                  <div class="video__content-people-img">
+                    <img src="./Assets/Img/Content/people.png" alt="" />
+                  </div>
+                  <div class="video__content-people-info">
+                    <span class="video__content-people-name">Hữu Hoài 2</span>
+                    <p class="video__content-people-add">
+                      UI & UX Design In Đông Ngàn
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="video__content">
+                <div class="video__content-head">
+                  <h3 class="video__content-heading">People talking about</h3>
+                </div>
+                <div class="video__content-body">
+                  <p class="video__content-body-info">
+                    "Discover & connect with great local businesses in your
+                    local neighborhood like dentists, hair stylists and more
+                    unde omnis iste natus error sit voluptatem.
+                  </p>
+                </div>
+                <div class="video__content-people">
+                  <div class="video__content-people-img">
+                    <img src="./Assets/Img/Content/people.png" alt="" />
+                  </div>
+                  <div class="video__content-people-info">
+                    <span class="video__content-people-name">Hữu Hoài 3</span>
+                    <p class="video__content-people-add">
+                      UI & UX Design In Đông Ngàn
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End SLider 6 -->
+      <footer class="footer">
+        <div class="grid wide">
+          <div class="row">
+            <div class="col l-3 c-12 m-6">
+              <div class="footer__content-1">
+                <a href="#"><img src="./Assets/Img/Logo/Logo.png" alt="" /></a>
+                <p class="footer__content-info">
+                  Seddo eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Conse ctetur pisicin elit, sed do eiusmod tempor.
+                </p>
+                <div class="footer__content-1-list">
+                  <i class="fab fa-facebook footer__icon"></i>
+                  <i class="fab fa-instagram footer__icon"></i>
+                  <i class="fab fa-linkedin-in footer__icon"></i>
+                  <i class="fab fa-youtube footer__icon"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col l-2 l-o-1 c-12 m-6">
+              <div class="footer__nav">
+                <h3>Navigation</h3>
+                <ul class="footer__list">
+                  <li class="footer__item">
+                    <a href="#home" class="footer__link">Home</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#about" class="footer__link">About</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#services" class="footer__link">Services</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#blog" class="footer__link">Blog</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#content" class="footer__link">Content</a>
+                  </li>
+                </ul>
+              </div>
+            </div> 
+            <div class="col l-2 c-12 m-6">
+              <div class="footer__nav">
+                <h3>Services</h3>
+                <ul class="footer__list">
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Care</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Treatment</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Training</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Hygienic Care</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link"></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col l-4 c-12 m-6">
+              <div class="footer__nav">
+                <h3>Subscribe newsletter</h3>
+                <p class="footer__content-info">
+                  Subscribe our newsletter to get updates about our services and
+                  offers.
+                </p>
+                <div class="footer__contact-imail">
+                  <input type="email" placeholder="Enter your email" required />
+                  <i class="fas fa-arrow-right footer__arrow"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__copyright">
+          <p>
+            Copyright ©2021 All rights reserved | This template is made with
+            <i class="fas fa-heart"></i> by <a href="">Hữu Hoài</a>
+          </p>
+        </div>
+      </footer>
+    </div>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./Assets/Js/app.js"></script>
+  </body>
+</html>
