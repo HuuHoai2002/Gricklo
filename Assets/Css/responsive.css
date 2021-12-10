@@ -59,6 +59,12 @@
   .footer__copyright {
     padding: 50px 0 15px 0;
   }
+.review__content-body-subheading {
+	font-size: 1.4rem;
+}
+.review__content-footer {
+	padding: 20px 15px 10px 15px;
+}
 }
 /* Mobile */
 @media (max-width: 739px) {

@@ -393,6 +393,9 @@ html {
   background-color: #8a725a;
   text-align: center;
 }
+.slick-slide img {
+	display: inline;
+}
 .vote-icon {
   font-size: 1.4rem;
   color: #ff6f00;
